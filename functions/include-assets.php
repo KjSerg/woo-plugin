@@ -9,13 +9,3 @@ function wmpw_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'wmpw_scripts' );
-
-function cfe_enqueue_admin_scripts() {
-
-	wp_enqueue_style( 'custom-admin-css', CFE__ASSETS_URL . '/css/admin.css', array(), '1.0' );
-
-	wp_enqueue_script( 'custom-admin-scripts', CFE__ASSETS_URL . '/js/admin.js', array( 'jquery' ), '1.0', true );
-
-}
-
-//add_action( 'admin_enqueue_scripts', 'cfe_enqueue_admin_scripts' );
