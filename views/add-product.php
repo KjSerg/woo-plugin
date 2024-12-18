@@ -106,7 +106,6 @@ function my_account_add_product_content() {
 					<?php echo ! $gallery ? 'required' : ''; ?>
                        style="display: none"
                        multiple
-                       maxlength="10"
                        accept="image/*"
                        class="upload-files"
                        name="upfile[]"
