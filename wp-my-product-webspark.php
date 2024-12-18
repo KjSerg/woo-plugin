@@ -4,8 +4,8 @@ Plugin Name: wp my product webspark
 Description: Розширення функцій WooCommerce
 Version: 1.0
 Author: Каланджій Сергій
-Author URI: https://github.com/KjSerg/
-Plugin URI: https://github.com/KjSerg/
+Author URI: https://github.com/KjSerg/woo-plugin/
+Plugin URI: https://github.com/KjSerg/woo-plugin/
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
