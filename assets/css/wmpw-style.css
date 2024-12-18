@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+
+.form-label {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    color: #282828;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.form-label.error > span {
+    color: red;
+}
+
+.editor-wrapper .ql-container {
+    height: auto;
+}
+
+.editor-wrapper {
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid #cecece;
+    background: #fff;
+    padding: 14px;
+    color: #1E1E1E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    outline: none;
+    transition: 0.5s ease;
+
+}
+
+input.error, textarea.error {
+    border-color: red;
+    color: red;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #A6A6A6;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    transition: 0.5s ease;
+}
+
+.half {
+    width: calc(50% - 10px);
+}
+
+.third {
+    width: calc(33.3% - 10px);
+}
+
+.form-button {
+    lign-items: center;
+    background: #282828;
+    color: #fff;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: center;
+    padding: 10px 24px;
+    text-transform: uppercase;
+    transition: .5s ease;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.msg {
+    margin-top: 20px;
+}
+
+.file-preview img {
+    max-width: 100px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.woocommerce-page table.shop_table.my-account-products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.my-account-products-table-wrapper{
+    width: 100%;
+}
+
+.woocommerce-page table.shop_table.my-account-products-table td, .woocommerce-page table.shop_table.my-account-products-table th {
+    padding: 10px 4px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.my-account-products-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a, .pagination span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    height: 34px;
+    padding: 2px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    color: #282828;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s ease;
+    outline: none;
+}
+.pagination a:hover{
+    background: rgba(0,0,0, 0.4);
+}
+.pagination .current {
+    background: #282828;
+    color: #fff;
+}
+
+
+.my-account-products-table__button:not(:last-child){
+    margin-bottom: 4px;
+}
+.my-account-products-table__button{
+    width: 100%;
+    margin: auto;
+    lign-items: center;
+    background: #282828;
+    color: #fff;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: center;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    transition: .5s ease;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+.my-account-products-table__button:hover, button:hover{
+    background: rgba(0,0,0, 0.4);
+}
+.text-center{
+    text-align: center!important;
+}
+
+
+@media (max-width: 600px) {
+    .half {
+        width: 100%;
+    }
+    .woocommerce-page table.shop_table.my-account-products-table{
+        width: 650px;
+    }
+    .my-account-products-table-wrapper{
+        overflow: auto;
+    }
+}
